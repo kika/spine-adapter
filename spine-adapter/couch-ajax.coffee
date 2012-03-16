@@ -1,9 +1,10 @@
-Spine ?= require('spine/core')
-$      = Spine.$
-Model  = Spine.Model
-db     = require("db")
-_ = require("underscore")._
-duality = require("duality/core")
+Spine  ?= require 'spine/core'
+$       = Spine.$
+Model   = Spine.Model
+duality = require "duality/core"
+db      = require "db"
+
+{_}     = require "underscore"
 
 Spine.Model.include
   toJSON: ->
